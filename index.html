@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indexhibit Custom Layout</title>
+    <style>
+        /* Basic reset */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Container styles */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Video container styling */
+        .video-container {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            height: 450px; /* Set your preferred height */
+            border: none;
+        }
+
+        /* Image container styling */
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+            display: block;
+        }
+
+        /* Text styling */
+        .bold-text {
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+
+        .single-line-text {
+            display: inline-block;
+            margin-left: 10px;
+        }
+
+        /* Menu bar titles */
+        .menu-bar-title {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 5px 0;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        /* Bio section styling */
+        .bio-section {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .bio-image {
+            width: 150px;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .bio-text {
+            flex: 1;
+            margin: 0;
+            padding: 10px;
+            background-color: #f4f4f4;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Task 1: Vimeo Video and Images Below -->
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Y_mWsJfU_Pg?si=FbRiJZrLOPz6cyZ5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="image-container">
+            <img src="DSC_9864_k.jpg" alt="Image 1">
+            
+        </div>
+
+        <!-- Task 2: Single Line Text Below Bold Text -->
+        <div>
+            <p><span class="bold-text">Bold Text:</span> <span class="single-line-text">Text to be in one line</span></p>
+            <p><span class="bold-text">Another Bold Text:</span> <span class="single-line-text">More text in one line</span></p>
+        </div>
+
+        <!-- Task 3: Menu Bar Titles in One Line -->
+        <div class="menu-bar">
+            <div class="menu-bar-title">my senses are all I have to offer</div>
+            <div class="menu-bar-title">seagulls cut through the sky</div>
+            <div class="menu-bar-title">becoming male in the middle ages</div>
+            <div class="menu-bar-title">A GUEST + A HOST = A GHOST</div>
+            <div class="menu-bar-title">tenho um rosto para ser amado</div>
+        </div>
+
+        <!-- Task 4: Bio Section -->
+        <div class="bio-section">
+            <img class="bio-image" src="01-bmw-autonomous-drift.webp" alt="Bio Image">
+            <div class="bio-text">
+                <p>Here is some text about the person. The bio section can be expanded with more details about the individual or their work.</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
